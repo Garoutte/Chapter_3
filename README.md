@@ -18,7 +18,7 @@ samtools index sample_mapping.sorted.bam
 
 bamToBed -i sample_mapping.sorted.bam > sample_mapping.bed
 
-python get_len.py sample_contigs.fa > sample_genome_len.txt
+python get_length.py sample_contigs.fa > sample_genome_len.txt
 
 genomeCoverageBed -i sample_mapping.bed -d -g sample_genome_len.txt > sample_mapping.g-cov.bed
 
